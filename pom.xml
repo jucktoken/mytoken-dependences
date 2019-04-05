@@ -215,7 +215,7 @@
             <name>Nexus Snapshot Repository</name>
             <url>http://192.168.110.133:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>-->
+    </distributionManagement>
 
     <repositories>
       <repository>
@@ -228,7 +228,7 @@
             <releases>
                 <enabled>true</enabled>
             </releases>
-        </repository>-->
+        </repository>
 
         <repository>
             <id>aliyun-repos</id>
@@ -294,7 +294,7 @@
             <releases>
                 <enabled>true</enabled>
             </releases>
-        </pluginRepository>-->
+        </pluginRepository>
 
         <pluginRepository>
             <id>aliyun-repos</id>
