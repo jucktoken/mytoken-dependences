@@ -32,6 +32,8 @@
         <spring-boot-tk.mybatis.version>2.0.2</spring-boot-tk.mybatis.version>
         <pagehelper-spring.version>1.2.5</pagehelper-spring.version>
         <zipkin.version>2.10.1</zipkin.version>
+        <lombok.version>1.16.18</lombok.version>
+        <nekohtml.version>1.9.22</nekohtml.version>
     </properties>
 
     <dependencyManagement>
@@ -83,16 +85,27 @@
             </dependency>
 
 
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>${spring-boot-alibaba-druid.version}</version>
-        </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${spring-boot-alibaba-druid.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>tk.mybatis</groupId>
                 <artifactId>mapper-spring-boot-starter</artifactId>
                 <version>${spring-boot-tk.mybatis.version}</version>
+            </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
+            <dependency>
+                <groupId>net.sourceforge.nekohtml</groupId>
+                <artifactId>nekohtml</artifactId>
+                <version>${nekohtml.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
