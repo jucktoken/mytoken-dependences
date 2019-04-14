@@ -34,6 +34,7 @@
         <zipkin.version>2.10.1</zipkin.version>
         <lombok.version>1.16.18</lombok.version>
         <nekohtml.version>1.9.22</nekohtml.version>
+        <json.version>2.9.6</json.version>
     </properties>
 
     <dependencyManagement>
@@ -103,9 +104,9 @@
             <version>1.16.18</version>
         </dependency>
             <dependency>
-                <groupId>net.sourceforge.nekohtml</groupId>
-                <artifactId>nekohtml</artifactId>
-                <version>${nekohtml.version}</version>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${json.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
