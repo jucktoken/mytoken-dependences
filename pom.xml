@@ -35,6 +35,8 @@
         <lombok.version>1.16.18</lombok.version>
         <nekohtml.version>1.9.22</nekohtml.version>
         <json.version>2.9.6</json.version>
+        <swagger.version>2.8.0</swagger.version>
+
     </properties>
 
     <dependencyManagement>
@@ -108,6 +110,20 @@
                 <artifactId>jackson-databind</artifactId>
                 <version>${json.version}</version>
             </dependency>
+
+
+        <!-- Swagger2 Begin -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+        </dependency>
+        <!-- Swagger2 End -->
         </dependencies>
     </dependencyManagement>
 
